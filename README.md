@@ -218,3 +218,7 @@ Once you've made your LinkedIn post:
 💡 **Learning is great, but showcasing your skills is even better!** By sharing your achievement, you're taking a **big step towards building your professional reputation** in the industry.  
 
 See you in the **LinkedIn network!** 🎉
+
+## Assignment Note
+This project demonstrates Git operations like clone, pull, push, and PR—a hands-on Mini-Finance tool.
+
