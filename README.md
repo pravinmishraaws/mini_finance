@@ -27,7 +27,9 @@ By working on this project, you will practice **Git & GitHub in real-world workf
 🔹 **Branching in Git** – Create and switch between feature branches.  
 🔹 **Staging & Committing Changes** – Track modifications properly.  
 🔹 **Pushing Changes to GitHub** – Synchronize your work with the remote repository.  
-🔹 **Submitting a Pull Request (PR)** – Collaborate using industry best practices.  
+🔹 **Submitting a Pull Request (PR)** – Collaborate using industry best practices.
+
+🔹 **Forking from another repo and you want to track it** – This is typically the original  repo you forked from.You need to manually add it to keep the fork in sync with the upstream repo. 
 
 ---
 
