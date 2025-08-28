@@ -212,6 +212,11 @@ Once you've made your LinkedIn post:
 
 🚀 **This is your opportunity to stand out in the DevOps & Cloud community.**  
 
+
+### Added by Mobarak Hosen
+
+This project demonstrates Git operations like clone, pull, push, PR—a hands-on Mini-Finance tool. This section is just testing purposes.
+
 ---
 
 ### **🎯 Final Thought**  
