@@ -3,6 +3,7 @@
 This project is part of My Udemy Course [Git & GitHub for Absolute Beginners with Project](https://www.udemy.com/course/git-and-github-for-beginners-start-coding-collaboratively/?referralCode=2D07E24EAB31E15FC5A4)
 
 **Welcome to CloudAdvisory!**  
+This project demonstrates Git operations like clone, pull, push, PR—a hands-on Mini-Finance tool.
 
 You have just joined CloudAdvisory as a new developer. Your first assignment is to contribute to the **Mini Finance Project**, a **personal finance dashboard** designed for tracking **transactions, expenses, and user profiles**.
 
