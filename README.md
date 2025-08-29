@@ -29,6 +29,8 @@ By working on this project, you will practice **Git & GitHub in real-world workf
 🔹 **Pushing Changes to GitHub** – Synchronize your work with the remote repository.  
 🔹 **Submitting a Pull Request (PR)** – Collaborate using industry best practices.  
 
+This project showcases essential Git workflows such as cloning, pulling, pushing, and creating PRs—illustrated through a Hands-on Mini-Finance tool.
+
 ---
 
 ## **🛠️ Your First Task: Personalizing the Profile Page**  
