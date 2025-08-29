@@ -1,5 +1,6 @@
 ## **[Mini Finance Project](https://www.tooplate.com/live/2135_mini_finance) - CloudAdvisory Onboarding Task**
 
+
 This project is part of My Udemy Course [Git & GitHub for Absolute Beginners with Project](https://www.udemy.com/course/git-and-github-for-beginners-start-coding-collaboratively/?referralCode=2D07E24EAB31E15FC5A4)
 
 **Welcome to CloudAdvisory!**  
@@ -216,5 +217,8 @@ Once you've made your LinkedIn post:
 
 ### **🎯 Final Thought**  
 💡 **Learning is great, but showcasing your skills is even better!** By sharing your achievement, you're taking a **big step towards building your professional reputation** in the industry.  
+
+### ** Feedback**
+This project demonstrates Git operations like clone, pull, push, PR—a hands-on Mini-Finance tool.
 
 See you in the **LinkedIn network!** 🎉
