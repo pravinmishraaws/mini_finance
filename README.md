@@ -1,4 +1,4 @@
-## **[Mini Finance Project](https://www.tooplate.com/live/2135_mini_finance) - CloudAdvisory Onboarding Task**
+﻿## **[Mini Finance Project](https://www.tooplate.com/live/2135_mini_finance) - CloudAdvisory Onboarding Task**
 
 This project is part of My Udemy Course [Git & GitHub for Absolute Beginners with Project](https://www.udemy.com/course/git-and-github-for-beginners-start-coding-collaboratively/?referralCode=2D07E24EAB31E15FC5A4)
 
@@ -224,3 +224,5 @@ See you in the **LinkedIn network!** 🎉
 Assignment Note
 
 This project demonstrates Git operations like clone, pull, push, and creating a Pull Request—a hands-on Mini-Finance tool.
+
+This project demonstrates Git operations like clone, pull, push, PR—a hands-on Mini-Finance tool.
