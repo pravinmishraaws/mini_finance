@@ -392,8 +392,14 @@ Bootstrap 5 Dashboard Admin Template
                             <div class="row">
                                 
                                 <div class="col-lg-12 col-12">
-                                    <p class="copyright-text">Copyright © Mini Finance 2048 - Mini Finance v1.0 — Deployed on 31 Aug 2025 — By Sirisha Molugu 
+                                    <p class="copyright-text">Copyright © Mini Finance 2048 - Mini Finance v1.0 — Deployed on <span id="footer-date"></span> — By Sirisha Molugu 
                                     - Design: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+<script>
+  const today = new Date();
+  const options = { day: 'numeric', month: 'short', year: 'numeric' };
+  document.getElementById('footer-date').textContent =
+    today.toLocaleDateString('en-GB', options);
+</script>
                                 </div>
 
                             </div>
