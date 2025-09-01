@@ -228,27 +228,31 @@ This ensures users always see the latest deployment date without manual updates.
   Copyright © Mini Finance 2048 Mini Finance v1.0 — 
   Deployed on <span id="footer-date"></span> — By Sirisha Molugu
 </p>
+```
 
-
-Javascript to make the date dynamic:
+```javascript
 // Update the footer with the current date
 const today = new Date();
 const options = { day: 'numeric', month: 'short', year: 'numeric' };
 document.getElementById('footer-date').textContent =
   today.toLocaleDateString('en-GB', options);
+  ```
 
 
-Steps to deploy:
-- git add index.html footer.js README.md
-- git commit -m "Made footer date dynamic"
-- git push origin main
-On EC2 instance:
-- cd /usr/share/nginx/html   # or your app folder
-- git pull origin main
-- sudo systemctl restart nginx
-Verify on the public URL that the footer shows today's date.
+### **Steps to deploy**  
+1. Stage and commit your changes:
+🔹git add index.html footer.js README.md
+🔹git commit -m "Made footer date dynamic"
+🔹git push origin main
 
-Screenshot:
+2. On your EC2 instance:
+🔹cd /usr/share/nginx/html   # or your app folder
+🔹git pull origin main
+🔹sudo systemctl restart nginx
+
+3. Verify on the public URL that the footer shows today's date.
+
+### Screenshot:
 ![Footer displaying dynamic date](./images/footer-date.jpeg)
 
 
