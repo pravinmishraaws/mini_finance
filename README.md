@@ -220,7 +220,5 @@ Once you've made your LinkedIn post:
 See you in the **LinkedIn network!** 🎉
 
 
-
-Assignment Note
-
+### **Assignment Note**  
 This project demonstrates Git operations like clone, pull, push, and creating a Pull Request—a hands-on Mini-Finance tool.
