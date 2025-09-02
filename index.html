@@ -679,7 +679,20 @@ Bootstrap 5 Dashboard Admin Template
 
             var chart = new ApexCharts(document.querySelector("#chart"), options);
             chart.render();
+
+            // This will get the current date and update the footer
+            document.addEventListener('DOMContentLoaded', (event) => {
+            const dateSpan = document.getElementById('deployDate');
+            const now = new Date();
+            const options = { day: '2-digit', month: 'short', year: 'numeric' };
+            const formattedDate = now.toLocaleDateString('en-US', options).replace(/,/g, '');
+            dateSpan.textContent = formattedDate;
+            });
         </script>
 
-    </body>
+    <footer id="app-footer" style="padding:12px 16px; border-top:1px solid #e5e7eb; text-align:center; font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;">
+    Mini Finance v1.0 — Deployed on <span id="deployDate"></span> — By Chinenye Jacinta Obasi
+    </footer></body>
+
 </html>
+
