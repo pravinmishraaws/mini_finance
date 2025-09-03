@@ -1,0 +1,37 @@
+name: Deploy to EC2 Nginx
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy to EC2
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
+            set -e
+
+            echo "🚀 Moving into repo directory"
+            cd /home/ubuntu/mini_finance
+
+            echo "📥 Pulling latest changes"
+            git fetch --all
+            git reset --hard origin/main
+
+            echo "🔄 Syncing to /var/www/mini-finance"
+            rsync -av --delete --exclude='.git' ./ /var/www/mini-finance/
+
+            echo "♻️ Restarting nginx"
+            sudo systemctl restart nginx
+          EOF
