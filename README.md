@@ -220,3 +220,32 @@ Once you've made your LinkedIn post:
 💡 **Learning is great, but showcasing your skills is even better!** By sharing your achievement, you're taking a **big step towards building your professional reputation** in the industry.  
 
 See you in the **LinkedIn network!** 🎉
+
+
+### ** Code Snippet for dynamic footer Date **
+
+```
+<footer class="site-footer">
+                        <div class="container">
+                            <div class="row">
+                                
+                                <div class="col-lg-12 col-12">
+                                    <p class="copyright-text">Copyright © Mini Finance 2048 
+                                    - Design: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+                                </div>
+                                    <p class="minifin-text"> Mini Finance v1.0 — Deployed on: <span style="color: brown; " id="date"></span> — By HASSAN HASSAN </p>
+                            </div>
+                        </div>
+                        <script>
+                            // Get today's date
+                            const today = new Date();
+
+                            // Format it (e.g. "August 30, 2025")
+                            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                            const formattedDate = today.toLocaleDateString(undefined, options);
+
+                            // Insert into HTML
+                            document.getElementById("date").textContent = formattedDate;
+                        </script>
+                    </footer>
+```
