@@ -3,8 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="description" content="">
     <meta name="author" content="Tooplate">
+
     <title>Mini Finance Dashboard Template</title>
 
     <!-- CSS FILES -->      
@@ -18,24 +20,36 @@
 </head>
 
 <body>
-    <!-- HEADER & SIDEBAR OMITTED FOR BREVITY -->
+    <!-- HEADER -->
+    <header class="navbar sticky-top flex-md-nowrap">
+        <!-- your header content remains unchanged -->
+    </header>
 
-    <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
-        <!-- Page content here -->
-        <h1>Welcome to Mini Finance</h1>
-        <!-- Your dashboard content, charts, blocks, etc. -->
-    </main>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- SIDEBAR -->
+            <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block sidebar collapse">
+                <!-- sidebar content remains unchanged -->
+            </nav>
 
-    <!-- SINGLE FOOTER (Day 1 static + Day 2 dynamic date) -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-12">
-                    Mini Finance v1.0 — Deployed on <span id="deploy-date"></span> — By Emmanuel Ulu
-                </div>
-            </div>
+            <!-- MAIN CONTENT -->
+            <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
+                <!-- your main content remains unchanged -->
+
+                <!-- FOOTER -->
+                <footer class="site-footer mt-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-12 text-center">
+                                Mini Finance v1.0 — Deployed on 
+                                <span id="deploy-date"></span> — By Emmanuel Ulu
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </main>
         </div>
-    </footer>
+    </div>
 
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>
@@ -43,46 +57,47 @@
     <script src="js/apexcharts.min.js"></script>
     <script src="js/custom.js"></script>
 
-    <!-- Charts JS (ApexCharts) -->
+    <!-- ApexCharts Scripts -->
     <script type="text/javascript">
-        var options = {
-          series: [13, 43, 22],
-          chart: { width: 380, type: 'pie' },
-          labels: ['Balance', 'Expense', 'Credit Loan'],
-          responsive: [{
-            breakpoint: 480,
-            options: { chart: { width: 200 }, legend: { position: 'bottom' } }
-          }]
+        var pieOptions = {
+            series: [13, 43, 22],
+            chart: { width: 380, type: 'pie' },
+            labels: ['Balance', 'Expense', 'Credit Loan'],
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    chart: { width: 200 },
+                    legend: { position: 'bottom' }
+                }
+            }]
         };
-        var chart = new ApexCharts(document.querySelector("#pie-chart"), options);
-        chart.render();
+        new ApexCharts(document.querySelector("#pie-chart"), pieOptions).render();
 
-        var optionsBar = {
-          series: [{
-            name: 'Income',
-            data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
-          }, {
-            name: 'Expense',
-            data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
-          }, {
-            name: 'Transfer',
-            data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
-          }],
-          chart: { type: 'bar', height: 350 },
-          plotOptions: { bar: { horizontal: false, columnWidth: '55%', endingShape: 'rounded' } },
-          dataLabels: { enabled: false },
-          stroke: { show: true, width: 2, colors: ['transparent'] },
-          xaxis: { categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'] },
-          yaxis: { title: { text: '$ (thousands)' } },
-          fill: { opacity: 1 },
-          tooltip: { y: { formatter: function(val) { return "$ " + val + " thousands" } } }
+        var barOptions = {
+            series: [
+                { name: 'Income', data: [44, 55, 57, 56, 61, 58, 63, 60, 66] },
+                { name: 'Expense', data: [76, 85, 101, 98, 87, 105, 91, 114, 94] },
+                { name: 'Transfer', data: [35, 41, 36, 26, 45, 48, 52, 53, 41] }
+            ],
+            chart: { type: 'bar', height: 350 },
+            plotOptions: { bar: { horizontal: false, columnWidth: '55%', endingShape: 'rounded' } },
+            dataLabels: { enabled: false },
+            stroke: { show: true, width: 2, colors: ['transparent'] },
+            xaxis: { categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'] },
+            yaxis: { title: { text: '$ (thousands)' } },
+            fill: { opacity: 1 },
+            tooltip: { y: { formatter: function(val) { return "$ " + val + " thousands"; } } }
         };
-        var chartBar = new ApexCharts(document.querySelector("#chart"), optionsBar);
-        chartBar.render();
+        new ApexCharts(document.querySelector("#chart"), barOptions).render();
     </script>
 
-    <!-- Footer date script (Day 2) -->
-    <script src="js/footer-date.js"></script>
+    <!-- Footer Date Script -->
+    <script>
+        const deployDate = new Date();
+        document.getElementById('deploy-date').textContent = deployDate.toLocaleDateString('en-GB', {
+            day: '2-digit', month: 'short', year: 'numeric'
+        });
+    </script>
 
 </body>
 </html>
