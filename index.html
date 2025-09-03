@@ -17,26 +17,60 @@
     <link href="css/bootstrap-icons.css" rel="stylesheet">
     <link href="css/apexcharts.css" rel="stylesheet">
     <link href="css/tooplate-mini-finance.css" rel="stylesheet">
+
+    <style>
+        /* Day 3 Footer polish & accessibility */
+        .site-footer {
+            background-color: #f4f4f4;
+            padding: 15px 10px;
+            font-size: 16px;          
+            color: #222;              
+            line-height: 1.6;
+        }
+
+        #mini-finance-footer {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .site-footer {
+                font-size: 14px;      
+                padding: 12px 8px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header class="navbar sticky-top flex-md-nowrap">
-        <!-- header content omitted for brevity -->
+        <!-- Header content unchanged -->
+        ... <!-- (Preserve all your header HTML here) -->
     </header>
 
     <div class="container-fluid">
         <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block sidebar collapse">
-                <!-- sidebar content omitted for brevity -->
+                <!-- Sidebar unchanged -->
+                ...
             </nav>
 
             <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
-                <!-- main content omitted for brevity -->
+                <!-- Main content unchanged -->
+                ...
 
-                <!-- Footer -->
-                <footer style="text-align:center; padding:10px; font-size:14px; background:#f4f4f4;">
-                    Mini Finance v1.0 — Deployed on <span id="deploy-date"></span> — By Emmanuel Ulu
+                <!-- Footer (Day 1 + Day 2 + Day 3 combined) -->
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <p id="mini-finance-footer">
+                                    Mini Finance v1.0 — Deployed on <span id="deploy-date"></span> — By Emmanuel Ulu
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </footer>
+
             </main>
         </div>
     </div>
@@ -47,40 +81,46 @@
     <script src="js/apexcharts.min.js"></script>
     <script src="js/custom.js"></script>
 
-    <!-- ApexCharts Scripts -->
+    <!-- ApexCharts Pie -->
     <script type="text/javascript">
         var options = {
-          series: [13, 43, 22],
-          chart: { width: 380, type: 'pie' },
-          labels: ['Balance', 'Expense', 'Credit Loan'],
-          responsive: [{
-            breakpoint: 480,
-            options: { chart: { width: 200 }, legend: { position: 'bottom' } }
-          }]
+            series: [13, 43, 22],
+            chart: { width: 380, type: 'pie' },
+            labels: ['Balance', 'Expense', 'Credit Loan'],
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    chart: { width: 200 },
+                    legend: { position: 'bottom' }
+                }
+            }]
         };
         var chart = new ApexCharts(document.querySelector("#pie-chart"), options);
         chart.render();
-
-        var optionsBar = {
-          series: [
-            { name: 'Income', data: [44, 55, 57, 56, 61, 58, 63, 60, 66] },
-            { name: 'Expense', data: [76, 85, 101, 98, 87, 105, 91, 114, 94] },
-            { name: 'Transfer', data: [35, 41, 36, 26, 45, 48, 52, 53, 41] }
-          ],
-          chart: { type: 'bar', height: 350 },
-          plotOptions: { bar: { horizontal: false, columnWidth: '55%', endingShape: 'rounded' } },
-          dataLabels: { enabled: false },
-          stroke: { show: true, width: 2, colors: ['transparent'] },
-          xaxis: { categories: ['Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct'] },
-          yaxis: { title: { text: '$ (thousands)' } },
-          fill: { opacity: 1 },
-          tooltip: { y: { formatter: function(val){ return "$ " + val + " thousands"; } } }
-        };
-        var chartBar = new ApexCharts(document.querySelector("#chart"), optionsBar);
-        chartBar.render();
     </script>
 
-    <!-- Footer Date Script -->
+    <!-- ApexCharts Bar -->
+    <script type="text/javascript">
+        var options = {
+            series: [
+                { name: 'Income', data: [44, 55, 57, 56, 61, 58, 63, 60, 66] },
+                { name: 'Expense', data: [76, 85, 101, 98, 87, 105, 91, 114, 94] },
+                { name: 'Transfer', data: [35, 41, 36, 26, 45, 48, 52, 53, 41] }
+            ],
+            chart: { type: 'bar', height: 350 },
+            plotOptions: { bar: { horizontal: false, columnWidth: '55%', endingShape: 'rounded' } },
+            dataLabels: { enabled: false },
+            stroke: { show: true, width: 2, colors: ['transparent'] },
+            xaxis: { categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'] },
+            yaxis: { title: { text: '$ (thousands)' } },
+            fill: { opacity: 1 },
+            tooltip: { y: { formatter: function(val){ return "$ " + val + " thousands"; } } }
+        };
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+    </script>
+
+    <!-- Day 2 Dynamic Date -->
     <script>
         const deployDate = new Date();
         document.getElementById('deploy-date').textContent = deployDate.toLocaleDateString('en-GB', {
