@@ -580,11 +580,9 @@ Bootstrap 5 Dashboard Admin Template
 
                     <footer class="site-footer">
                         <div class="container">
-                             <div class="row">
+                            <div class="row">
                                 <div class="col-lg-12 col-12">
-                                    <p class="copyright-text">
-                                        Mini Finance v1.0 — Deployed on 03 Sep 2025 — By Emmanuel
-                                    </p>
+                                    <p id="deploy-info" class="copyright-text"></p>
                                 </div>
                             </div>
                         </div>
@@ -679,6 +677,15 @@ Bootstrap 5 Dashboard Admin Template
 
             var chart = new ApexCharts(document.querySelector("#chart"), options);
             chart.render();
+        </script>
+        <script>
+            const studentName = "Emmanuel Ulu";
+            const today = new Date();
+            const options = { day: '2-digit', month: 'short', year: 'numeric' };
+            const formattedDate = today.toLocaleDateString('en-GB', options);
+
+            document.getElementById("deploy-info").innerText =
+            `Mini Finance v1.0 — Deployed on ${formattedDate} — By ${studentName}`;
         </script>
 
     </body>
