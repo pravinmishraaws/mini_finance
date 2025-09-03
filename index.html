@@ -23,29 +23,29 @@
         <link href="css/apexcharts.css" rel="stylesheet">
 
         <link href="css/tooplate-mini-finance.css" rel="stylesheet">
+        
         <style>
+  /* Footer Day 3 styles */
             #deploy-info {
-            font-size: 14px;
-            color: #fff;
-            letter-spacing: 0.5px;
-            margin: 0;
-            }
+                font-size: 14px;
+                color: #fff;           /* white text on dark footer */
+                letter-spacing: 0.5px;
+                margin: 0;
+                        }
 
             .student-name {
-            font-weight: bold;
-            font-size: 16px;
-            color: #ffd700; /* gold accent */
-            }
+                font-weight: bold;
+                font-size: 16px;
+                color: #ffd700;        /* gold accent for name */
+                        }
 
+  /* Responsive for mobile */
             @media (max-width: 600px) {
-            #deploy-info {
-            font-size: 12px;
-            }
-            .student-name {
-            font-size: 14px;
-            }
-            }
+                #deploy-info { font-size: 12px; }
+            .student-name { font-size: 14px; }
+                                        }
         </style>
+
 <!--
 
 Tooplate 2135 Mini Finance
@@ -602,16 +602,16 @@ Bootstrap 5 Dashboard Admin Template
                     </div>
 
                     
-                      <footer class="site-footer" style="background-color:#222; padding: 15px 0;"></footer>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 col-12">
-                                    <!-- ✅ Placeholder for script -->
-                                        <p id="deploy-info" class="copyright-text"></p>
+                        <footer class="site-footer" style="background-color:#222; padding: 15px 0;">
+                            <div class="container">
+                                <div class="row">
+                                     <div class="col-lg-12 col-12 text-center">
+                                         <p id="deploy-info"></p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </footer>
+                        </footer>
+
 
 
                 </main>
@@ -704,17 +704,19 @@ Bootstrap 5 Dashboard Admin Template
             var chart = new ApexCharts(document.querySelector("#chart"), options);
             chart.render();
         </script>
+        
         <script>
             document.addEventListener("DOMContentLoaded", function() {
-            const studentName = "Emmanuel Ulu";
-            const today = new Date();
-            const options = { day: '2-digit', month: 'short', year: 'numeric' };
-            const formattedDate = today.toLocaleDateString('en-GB', options);
+                const studentName = "Emmanuel Ulu";
+                const today = new Date();
+                const options = { day: '2-digit', month: 'short', year: 'numeric' };
+                const formattedDate = today.toLocaleDateString('en-GB', options);
 
             document.getElementById("deploy-info").innerHTML =
                 `Mini Finance v1.0 — Deployed on ${formattedDate} — By <span class="student-name">${studentName}</span>`;
-            });
+              });
         </script>
+
 
     
 
