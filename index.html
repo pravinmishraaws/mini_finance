@@ -582,11 +582,13 @@ Bootstrap 5 Dashboard Admin Template
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 col-12">
-                                    <p id="deploy-info" class="copyright-text"></p>
+                                    <!-- ✅ Placeholder for script -->
+                                        <p id="deploy-info" class="copyright-text"></p>
                                 </div>
                             </div>
                         </div>
                     </footer>
+
 
                 </main>
 
@@ -679,6 +681,7 @@ Bootstrap 5 Dashboard Admin Template
             chart.render();
         </script>
         <script>
+            document.addEventListener("DOMContentLoaded", function() {
             const studentName = "Emmanuel Ulu";
             const today = new Date();
             const options = { day: '2-digit', month: 'short', year: 'numeric' };
@@ -686,7 +689,9 @@ Bootstrap 5 Dashboard Admin Template
 
             document.getElementById("deploy-info").innerText =
             `Mini Finance v1.0 — Deployed on ${formattedDate} — By ${studentName}`;
-        </script>
+  });
+</script>
+
 
     </body>
 </html>
