@@ -712,6 +712,11 @@ Bootstrap 5 Dashboard Admin Template
                 const options = { day: '2-digit', month: 'short', year: 'numeric' };
                 const formattedDate = today.toLocaleDateString('en-GB', options);
 
+                
+                // ✅ Real commit hash for Day 4    
+                const rev = "rev: edce73c";
+
+
             document.getElementById("deploy-info").innerHTML =
                 `Mini Finance v1.0 — Deployed on ${formattedDate} — By <span class="student-name">${studentName}</span>`;
               });
