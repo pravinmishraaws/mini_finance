@@ -602,15 +602,15 @@ Bootstrap 5 Dashboard Admin Template
                     </div>
 
                     
-                        <footer class="site-footer" style="background-color:#222; padding: 15px 0;">
-                            <div class="container">
-                                <div class="row">
-                                     <div class="col-lg-12 col-12 text-center">
+                    <footer class="site-footer">
+                         <div class="container">
+                                 <div class="row">
+                                    <div class="col-lg-12 col-12 text-center">
                                          <p id="deploy-info"></p>
                                     </div>
-                                </div>
-                            </div>
-                        </footer>
+                                </div>  
+                        </div>
+                    </footer>
 
 
 
@@ -707,19 +707,16 @@ Bootstrap 5 Dashboard Admin Template
         
         <script>
             document.addEventListener("DOMContentLoaded", function() {
-                const studentName = "Emmanuel Ulu";
-                const today = new Date();
-                const options = { day: '2-digit', month: 'short', year: 'numeric' };
-                const formattedDate = today.toLocaleDateString('en-GB', options);
+            const studentName = "Emmanuel Ulu";
+            const options = { day: '2-digit', month: 'short', year: 'numeric' };
+            const formattedDate = new Date().toLocaleDateString('en-GB', options);
 
-                
-                // ✅ Real commit hash for Day 4    
-                const rev = "rev: edce73c";
-
+            // ✅ Real commit hash for Day 4
+            const rev = "rev: edce73c";
 
             document.getElementById("deploy-info").innerHTML =
-                `Mini Finance v1.0 — Deployed on ${formattedDate} — By <span class="student-name">${studentName}</span>`;
-              });
+                `Mini Finance v1.0 — Deployed on ${formattedDate} — By <span class="student-name">${studentName}</span> — <span class="rev-tag">${rev}</span>`;
+            });
         </script>
 
 
