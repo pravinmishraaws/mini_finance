@@ -21,6 +21,28 @@
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/tooplate-mini-finance.css" rel="stylesheet">
+
+             <style>
+  /* Footer Day 3 styles */
+            #deploy-info {
+                font-size: 14px;
+                color: #fff;           /* white text on dark footer */
+                letter-spacing: 0.5px;
+                margin: 0;
+                        }
+
+            .student-name {
+                font-weight: bold;
+                font-size: 16px;
+                color: #ffd700;        /* gold accent for name */
+                        }
+
+  /* Responsive for mobile */
+            @media (max-width: 600px) {
+                #deploy-info { font-size: 12px; }
+            .student-name { font-size: 14px; }
+                                        }
+        </style>
 <!--
 
 Tooplate 2135 Mini Finance
@@ -332,18 +354,16 @@ Bootstrap 5 Dashboard Admin Template
                         </div>
                     </div>
 
-                    <footer class="site-footer">
+                    <footer class="site-footer" style="background-color:#000;  color:#FFD700; padding: 15px 0;">
                         <div class="container">
                             <div class="row">
-                                
-                                <div class="col-lg-12 col-12">
-                                    <p class="copyright-text">Copyright © Mini Finance 2048 
-                                    - Design: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+                                <div class="col-lg-12 col-12 text-center">
+                                     <p id="deploy-info"></p>
                                 </div>
-
                             </div>
                         </div>
                     </footer>
+
                 </main>
 
             </div>
@@ -353,16 +373,19 @@ Bootstrap 5 Dashboard Admin Template
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            const studentName = "Emmanuel Ulu";
+            const options = { day: '2-digit', month: 'short', year: 'numeric' };
+            const formattedDate = new Date().toLocaleDateString('en-GB', options);
 
-         <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-12">
-                        Mini Finance v1.0 — Deployed on 03 Sep 2025 — By Emmanuel Ulu
-                    </div>
-                </div>
-            </div>
-        </footer>
+            // ✅ Real commit hash for Day 4
+            const rev = "rev: edce73c";
+
+            document.getElementById("deploy-info").innerHTML =
+                `Mini Finance v1.0 — Deployed on ${formattedDate} — By <span class="student-name">${studentName}</span> — <span class="rev-tag">${rev}</span>`;
+            });
+        </script>
 
     </body>
 </html>
