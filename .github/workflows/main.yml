@@ -1,0 +1,28 @@
+name: Deploy via SSH & rsync
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Deploy to EC2
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.EC2_HOST }}
+          REMOTE_USER: ${{ secrets.EC2_USER }}
+          TARGET: /usr/share/nginx/html
+          SOURCE: "."
+          ARGS: "-rlgoDzvc --delete"
+          EXCLUDE: ".git/, node_modules/"
+          SCRIPT_BEFORE: |
+            mkdir -p /usr/share/nginx/html
+          SCRIPT_AFTER: |
+            cd /usr/share/nginx/html
+            npm install --production
+            pm2 restart app || pm2 start app
