@@ -1,5 +1,5 @@
 ## **[Mini Finance Project](https://www.tooplate.com/live/2135_mini_finance) - CloudAdvisory Onboarding Task**
-
+“This PR adds a new section to the README explaining the project's purpose in the context of this GitHub assignment.”
 This project is part of My Udemy Course [Git & GitHub for Absolute Beginners with Project](https://www.udemy.com/course/git-and-github-for-beginners-start-coding-collaboratively/?referralCode=2D07E24EAB31E15FC5A4)
 
 **Welcome to CloudAdvisory!**  
