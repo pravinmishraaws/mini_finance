@@ -212,6 +212,21 @@ Once you've made your LinkedIn post:
 
 🚀 **This is your opportunity to stand out in the DevOps & Cloud community.**  
 
+## Footer (version + dynamic date)
+The footer shows:
+Mini Finance v1.0 — Deployed on <DD Mon YYYY> — By <Your Name>
+
+The date is generated client-side with JS:
+- Format: DD Mon YYYY (e.g., 04 Sep 2025)
+- See script near the footer in index.html
+
+
+
+
+
+
+
+
 ---
 
 ### **🎯 Final Thought**  
