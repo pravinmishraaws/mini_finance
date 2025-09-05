@@ -224,3 +224,36 @@ See you in the **LinkedIn network!** 🎉
 Assignment Note
 
 This project demonstrates Git operations like clone, pull, push, and creating a Pull Request—a hands-on Mini-Finance tool.
+
+
+### Footer Enhancement
+
+This update focuses on implementing a dynamic footer that shows version information and the deployment date.
+
+#### **Changes:**
+
+  - **Dynamic Date:** The footer's deployment date is now automatically generated using JavaScript's `Date()` object, ensuring it always reflects the current date.
+  - **Static Text:** The footer includes static text for the application name (`Mini Finance v1.0`) and the author's name (`Chinenye Jacinta Obasi`).
+  - **Styling:** A small amount of inline CSS was added to ensure the footer is clearly visible and separated from the main content.
+
+#### **Code Snippet:**
+
+The following JavaScript code was added to `index.html` to handle the dynamic date:
+
+```javascript
+document.addEventListener('DOMContentLoaded', (event) => {
+    const dateSpan = document.getElementById('deployDate');
+    const now = new Date();
+    const options = { day: '2-digit', month: 'short', year: 'numeric' };
+    const formattedDate = now.toLocaleDateString('en-US', options).replace(/,/g, '');
+    dateSpan.textContent = formattedDate;
+});
+```
+
+And the corresponding HTML for the footer was updated to:
+
+```html
+<footer id="app-footer" style="padding:12px 16px; border-top:1px solid #e5e7eb; text-align:center; font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;">
+    Mini Finance v1.0 — Deployed on <span id="deployDate"></span> — By Chinenye Jacinta Obasi
+</footer>
+```
