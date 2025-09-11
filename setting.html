@@ -395,7 +395,7 @@ Bootstrap 5 Dashboard Admin Template
                                     <p class="copyright-text">Copyright © Mini Finance 2048 
                                     - Design: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
                                     <p class="version-text">
-                                            Mini Finance v1.0 — Deployed on <span id="deploy-date">07 Sep 2025</span> — By <strong>Isaac Owusu-Ansah</strong>
+                                            Mini Finance v1.0 — Deployed on <span id="deploy-date"></span> — By <strong>Isaac Owusu-Ansah</strong>
                                      </p>
                                 </div>
 
@@ -411,6 +411,20 @@ Bootstrap 5 Dashboard Admin Template
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+    // Get today's date
+    const today = new Date();
 
+    // Extract day, month, and year with leading zeros
+    const day = String(today.getDate()).padStart(2, '0');
+    const month = String(today.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+    const year = today.getFullYear();
+
+    // Format as dd/mm/yyyy
+    const formattedDate = `${day}/${month}/${year}`;
+
+    // Insert into the page
+    document.getElementById("deploy-date").textContent = formattedDate;
+  </script>
     </body>
 </html>

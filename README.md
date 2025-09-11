@@ -219,6 +219,19 @@ Once you've made your LinkedIn post:
 
 See you in the **LinkedIn network!** 🎉
 
+### 📅 Displaying the Current Date in `dd/mm/yyyy` Format
+
+To dynamically display the current date in the format `dd/mm/yyyy` on my HTML page, I used the following JavaScript code:
+
+```html
+<script>
+  // Get today's date
+  const today = new Date();
+
+  // Extract day, month, and year with leading zeros
+  const day = String(today.getDate()).padStart(2, '0');
+  const month = String(today.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+  const
 
 
 Assignment Note
