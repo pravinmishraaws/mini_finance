@@ -1,13 +1,9 @@
-
 ## **[Mini Finance Project](https://www.tooplate.com/live/2135_mini_finance) - CloudAdvisory Onboarding Task**
 
 “This PR adds a new section to the README explaining the project's purpose in the context of this GitHub assignment.”
 This project is part of My Udemy Course [Git & GitHub for Absolute Beginners with Project](https://www.udemy.com/course/git-and-github-for-beginners-start-coding-collaboratively/?referralCode=2D07E24EAB31E15FC5A4)
 
-
 This project is part of My Udemy Course. This project demonstrates GIT operations like clone, pull, push, PR-a hands-on Mini-Finance tool. [Git & GitHub for Absolute Beginners with Project](https://www.udemy.com/course/git-and-github-for-beginners-start-coding-collaboratively/?referralCode=2D07E24EAB31E15FC5A4)
-
-
 
 You have just joined CloudAdvisory as a new developer. Your first assignment is to contribute to the **Mini Finance Project**, a **personal finance dashboard** designed for tracking **transactions, expenses, and user profiles**.
 
@@ -23,13 +19,14 @@ The **[Mini Finance](https://www.tooplate.com/live/2135_mini_finance)** project 
 ✅ **Settings & Help Center** – Enables users to update preferences and seek assistance.
 
 ## About This Project
+
 This project demonstrates Git operations like clone, pull, push, and PR — a hands-on Mini-Finance tool.
 
 ---
 
-## **📌 What You Will Learn?**  
-By working on this project, you will practice **Git & GitHub in real-world workflows**, including:  das
+## **📌 What You Will Learn?**
 
+By working on this project, you will practice **Git & GitHub in real-world workflows**, including: das
 
 🔹 **Cloning a Repository** – Work with remote repositories on GitHub.  
 🔹 **Branching in Git** – Create and switch between feature branches.  
@@ -45,12 +42,11 @@ Your first **development task** is to update the **Profile Page** by modifying u
 
 ### **Step 1: Clone the Mini Finance Repository**
 
-1️⃣ Open **Git Bash** or your terminal.  
+1️⃣ Open **Git Bash** or your terminal.
 
-2️⃣ Navigate to your project folder: 
+2️⃣ Navigate to your project folder:
 
 This project demonstrates Git operations like clone, pull, push, PR—a hands-on Mini-Finance tool.”
-
 
 ```sh
 cd path/to/your/projects
@@ -162,9 +158,7 @@ git push origin feature-alex-smith
 
 🚀 **Now your PR is ready for review!** Our team will check your changes, provide feedback, and merge them if everything looks good.
 
-
-This project demonstrates Git operations like clone, pull, push, Pull Request (PR),a hands-on Mini-Finance tool.
----
+## This project demonstrates Git operations like clone, pull, push, Pull Request (PR),a hands-on Mini-Finance tool.
 
 ## **📢 Bonus Challenge**
 
@@ -246,17 +240,20 @@ Once you've made your LinkedIn post:
 
 ---
 
-
 ### **🎯 Final Thought**
 
 💡 **Learning is great, but showcasing your skills is even better!** By sharing your achievement, you're taking a **big step towards building your professional reputation** in the industry.
 
 See you in the **LinkedIn network!** 🎉
 
-
-Note: Minor update for GitHub assignment.
-=======
+# Note: Minor update for GitHub assignment.
 
 This project demonstrates Git operations like clone, pull, push, and creating a Pull Request—a hands-on Mini-Finance tool.
 
+---
 
+## About This Project
+
+This project demonstrates Git operations like clone, pull, push, and PR — a hands-on Mini-Finance tool.
+
+=>James.j.tuttle@gmail.com
