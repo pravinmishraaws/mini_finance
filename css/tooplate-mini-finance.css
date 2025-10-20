@@ -966,7 +966,7 @@ strong {
 
 .site-footer a {
     color: #333333; /* Dark gray, highly contrasting, but softer than pure black */
-}
+  }
 
 .copyright-text {
   font-size: var(--copyright-font-size);
