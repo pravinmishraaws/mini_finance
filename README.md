@@ -24,7 +24,7 @@ The **[Mini Finance](https://www.tooplate.com/live/2135_mini_finance)** project 
 
 ## About This Project
 This project demonstrates Git operations like clone, pull, push, and PR — a hands-on Mini-Finance tool.
-
+Working on it gives the learner opportunity to master how to execute important git commands while working on a real-world project.
 ---
 
 ## **📌 What You Will Learn?**  
