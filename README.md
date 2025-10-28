@@ -4,6 +4,8 @@
 “This PR adds a new section to the README explaining the project's purpose in the context of this GitHub assignment.”
 This project is part of My Udemy Course [Git & GitHub for Absolute Beginners with Project](https://www.udemy.com/course/git-and-github-for-beginners-start-coding-collaboratively/?referralCode=2D07E24EAB31E15FC5A4)
 
+## About This Project
+This project demonstrates Git operations like clone, pull, push, and PR — a hands-on Mini-Finance tool.
 
 This project is part of My Udemy Course. This project demonstrates GIT operations like clone, pull, push, PR-a hands-on Mini-Finance tool. [Git & GitHub for Absolute Beginners with Project](https://www.udemy.com/course/git-and-github-for-beginners-start-coding-collaboratively/?referralCode=2D07E24EAB31E15FC5A4)
 
