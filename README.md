@@ -262,4 +262,5 @@ Note: Minor update for GitHub assignment.
 
 This project demonstrates Git operations like clone, pull, push, and creating a Pull Request—a hands-on Mini-Finance tool.
 
+This section explains the purpose of the project in the context of this GitHub assignment.
 
