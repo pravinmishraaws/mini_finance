@@ -1,4 +1,4 @@
-
+“This project demonstrates Git operations like clone, pull, push, PR—a hands-on Mini-Finance tool.”
 ## **[Mini Finance Project](https://www.tooplate.com/live/2135_mini_finance) - CloudAdvisory Onboarding Task**
 
 “This PR adds a new section to the README explaining the project's purpose in the context of this GitHub assignment.”
