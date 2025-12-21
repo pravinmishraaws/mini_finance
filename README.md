@@ -262,4 +262,4 @@ Note: Minor update for GitHub assignment.
 
 This project demonstrates Git operations like clone, pull, push, and creating a Pull Request—a hands-on Mini-Finance tool.
 
-
+LPJ - 12/21/2025: In a standard setup, you generally have an upstream and a remote. The latter being the gatekeeper of the project or the source of truth to which you wish to contribute.
