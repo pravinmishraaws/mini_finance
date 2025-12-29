@@ -1,3 +1,5 @@
+Git Workflow
+
 
 ## **[Mini Finance Project](https://www.tooplate.com/live/2135_mini_finance) - CloudAdvisory Onboarding Task**
 
