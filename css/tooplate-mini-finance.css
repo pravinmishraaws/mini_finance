@@ -1146,4 +1146,48 @@ strong {
     font-size: var(--h6-font-size);
   }
 }
+footer {
+  background: #f8f8f8;
+  font-size: 14px;
+  color: #333;
+  padding: 15px;
+}
 
+@media (max-width: 480px) {
+  footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+/*---------------------------------------
+  CUSTOM FOOTER STYLING (Day 3 – Polished)
+-----------------------------------------*/
+footer {
+  background: #f4f4f4; /* Light gray background for better contrast */
+  color: #222; /* Darker text for accessibility */
+  font-size: 15px; /* Slightly larger for readability */
+  line-height: 1.6; /* More breathing space between lines */
+  text-align: center;
+  padding: 20px 15px; /* Balanced padding on all sides */
+  border-top: 1px solid #ddd; /* Subtle top border to separate from content */
+}
+
+footer a {
+  color: #1D3557; /* Uses your heading color variable for better contrast */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #E63946; /* Your primary color */
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  footer {
+    font-size: 13px; /* Slightly smaller for narrow screens */
+    padding: 12px 10px;
+  }
+}
