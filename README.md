@@ -12,7 +12,8 @@ This project is part of My Udemy Course. This project demonstrates GIT operation
 You have just joined CloudAdvisory as a new developer. Your first assignment is to contribute to the **Mini Finance Project**, a **personal finance dashboard** designed for tracking **transactions, expenses, and user profiles**.
 
 ---
-
+## About This Project
+This project demonstrates Git operations like clone, pull, push, and PR — a hands-on Mini-Finance tool.
 ## **🎯 Project Overview: What is Mini Finance?**
 
 The **[Mini Finance](https://www.tooplate.com/live/2135_mini_finance)** project is a **static website** that helps users manage their financial data. The key sections include:
