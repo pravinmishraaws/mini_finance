@@ -263,3 +263,9 @@ Note: Minor update for GitHub assignment.
 This project demonstrates Git operations like clone, pull, push, and creating a Pull Request—a hands-on Mini-Finance tool.
 
 
+## DMI Assignment Task 3 - Feature Branch Demo
+Created by: Velpur Venkata Lakshmi Sesha Giridhar Mahesh
+Added this section in feature branch for proof.
+## DMI Week 3 Task 3 - Feature Branch Demo
+Created by: Velpur Venkata Lakshmi Sesha Giridhar Mahesh
+Added this section in local feature branch for assignment proof.
